@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+</head>
+<div class="input-box">
+<body>
+value 1
+<br>
+<input type="number" id="value1" placeholder="value 1">
+<br><br>
+value 2
+<br>
+<input type="number" id="value2" placeholder="value 2">
+<br><br>
+
+<input type="button" id="ff" value="+" onclick="total()">
+<input type="button" name="*" id="jj" onclick="multiply()" value="*">
+<input type="button" name="*" id="gg" onclick="baghi()" value="%">
+<input type="button" name="*" id="dd" onclick="devide()" value="/">
+<input type="button" name="*" id="cc" onclick="minuse()" value="-">
+<br>
+<br> 
+answer
+<br>
+<input type="number" id="total" placeholder="total">
+</div>
+<script>
+    function total() {
+        var a = Number(document.getElementById("value1").value);
+        var b = Number(document.getElementById("value2").value);
+        if (a&&b!="") {
+        document.getElementById("total").value = a + b 
+            
+        } else {
+            alert("please enter values in the inputs")
+        }
+    }
+    function multiply() {
+        var a = Number(document.getElementById("value1").value);
+        var b = Number(document.getElementById("value2").value);
+
+        if (a&&b!="") {
+        document.getElementById("total").value = a * b 
+            
+        } else {
+            alert("please enter values in the inputs")
+        }
+    }
+    function baghi() {
+        var a = Number(document.getElementById("value1").value);
+        var b = Number(document.getElementById("value2").value);
+
+         if (a&&b!="") {
+        document.getElementById("total").value = a % b 
+            
+        } else {
+            alert("please enter values in the inputs")
+        }
+    }
+    function devide() {
+        var a = Number(document.getElementById("value1").value);
+        var b = Number(document.getElementById("value2").value);
+
+        if (a&&b!="") {
+        document.getElementById("total").value = a / b 
+            
+        } else {
+            alert("please enter values in the inputs")
+        }
+    }
+    function minuse() {
+        var a = Number(document.getElementById("value1").value);
+        var b = Number(document.getElementById("value2").value);
+
+        if (a&&b!="") {
+        document.getElementById("total").value = a - b 
+            
+        } else {
+            alert("please enter values in the inputs")
+        }
+    }
+</script>
+
+</body>
+</html>
+
